@@ -1,0 +1,38 @@
+{
+    "name": "pharmacy",
+    "version": "1.0.0",
+    "description": "NodeJS Express Boilerplate",
+    "main": "server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scripts": {
+        "start": "export NODE_ENV=production && nodemon server.js",
+        "start_dev": "export NODE_ENV=development && nodemon server.js",
+        "test": "export NODE_ENV=test && mocha",
+        "test_integration": "export NODE_ENV=test && mocha --require ./test/integration/global_fixture.js test/integration"
+    },
+    "dependencies": {
+        "accesscontrol": "^2.2.1",
+        "argon2": "^0.28.5",
+        "axios": "^0.27.2",
+        "chai": "^4.3.6",
+        "cookie-parser": "1.4.5",
+        "cors": "2.8.5",
+        "express": "4.17.1",
+        "express-validator": "^6.14.1",
+        "generate-password": "^1.7.0",
+        "jsonwebtoken": "^8.5.1",
+        "mocha": "^10.0.0",
+        "mongodb": "^4.6.0",
+        "morgan": "^1.10.0",
+        "multer": "1.4.2",
+        "nodemailer": "^6.7.5",
+        "pg": "^8.7.3",
+        "should": "^13.2.3",
+        "winston": "^3.7.2",
+        "xhr2": "^0.2.1"
+    },
+    "devDependencies": {
+        "@aws-sdk/client-s3": "^3.95.0",
+        "nodemon": "^2.0.16"
+    }
+}
